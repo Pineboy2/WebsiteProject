@@ -1,0 +1,40 @@
+nav {
+    font-family: "Helvetica",sans-serif;
+    position: fixed;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #4a4a4f;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-left: 2.5%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 0px;
+}
+
+nav li a:hover {
+    background-color: #ffffff;
+    color: #4a4a4f;
+}
+
+nav img {
+    height: 35px;
+    text-align: left;
+    display: inline-block;
+    padding: 10px 10px 0px 10px;
+}
