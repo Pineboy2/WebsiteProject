@@ -1,0 +1,11 @@
+ .video {
+    width: 640;
+    height: 480;
+    float: right;
+    position: relative;
+}
+
+h1 {
+    position: relative;
+    float: right;
+}

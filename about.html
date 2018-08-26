@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css" type="text/css" />
+    <link rel="stylesheet" href="about.css" type="text/css" />
     <title>Band Website</title>
 </head>
 <body>
-    <header class="navbar" id="TopNav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="media.html">Gallery</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </header>
+	<nav class="navDefault">
+		<div class="dropdown">
+			<button>Dropdown</button>
+			<ul class="dropdownMenu">
+				<li class="dropdownItem"><a href="index.html" class="dropdownLink">Home</a></li>
+				<li class="dropdownItem"><a href="about.html" class="dropdownLink">About</a></li>
+				<li class="dropdownItem"><a href="about.html" class="dropdownLink">Gallery</a></li>
+				<li class="dropdownItem"><a href="events.html" class="dropdownLink">Events</a></li>
+				<li class="dropdownItem"><a href="contact.html" class="dropdownLink">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
     <main class="main">
         <div class="member">
             <h1>About The Band</h1>
@@ -28,7 +32,7 @@
             </span>
             <span>
                 <img src="https://www.gravatar.com/avatar/e48f467951ed8141e08ab5087666bddb?s=80&d=retro"></img>
-                <h2>Lead Guitar</h2>
+                <h2>Lead Guitarist</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate repudiandae fuga, fugiat consequatur sint, sit!</p>
             </span>
             <span>
