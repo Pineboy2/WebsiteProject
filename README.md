@@ -1,5 +1,8 @@
 # Dastardlys Band Website
 
+My project is designing a website for a local band called The Dastardlys.
+The website will allow users to listen to their music, view past performances, see the event schedule, and contact the band.
+
 One or two paragraphs providing an overview of your project.
 
 Essentially, this part is your sales pitch.
@@ -30,7 +33,6 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 - [Bootstrap](https://getbootstrap.com/)
     - The project uses **Bootstrap** to streamline styling and responsive design.
 - [JQuery](https://jquery.com)
