@@ -1,4 +1,4 @@
-# Your Project's Name
+# Dastardlys Band Website
 
 One or two paragraphs providing an overview of your project.
 
@@ -31,7 +31,7 @@ In addition, you may also use this section to discuss plans for additional featu
 ## Technologies Used
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-- [Bootstrap] ()
+- [Bootstrap](https://getbootstrap.com/)
     - The project uses **Bootstrap** to streamline styling and responsive design.
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to because bootstrap needed it.
