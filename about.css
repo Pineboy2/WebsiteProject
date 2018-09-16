@@ -1,8 +1,43 @@
-.member p {
-    padding: 0 10px;
+.about-all {
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: #fff;
+    height: 100%;
+    width: 24vw;
+    margin: 0.4vw;
 }
 
-.member img {
-    padding-top: 20px;
+.about-all img {
+    width: 100%;
     border-radius: 50%;
+    margin-top: 10px;
 }
+
+#about-tony {
+    margin-left: 0.4vw;
+}
+
+#about-brian
+#about-gareth
+#about-al {
+}
+
+/*
+.member span{
+    border-color: red;
+    border-width: 10px;
+    width: 20vw;
+    height: 450px;
+    border-radius: 15px;
+    margin: 2.4vw;
+    float: left;
+    background-color: #7a7a7f;
+    text-align: center;
+    color: #fff;
+}
+
+h2,h3 {
+    padding: 2px;
+    margin: 2px;
+}
+*/

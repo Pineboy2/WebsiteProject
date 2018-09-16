@@ -1,55 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="main.css" type="text/css" />
     <link rel="stylesheet" href="about.css" type="text/css" />
     <title>Band Website</title>
 </head>
-<body>
-	<nav class="navDefault">
-		<div class="dropdown">
-			<button>Dropdown</button>
-			<ul class="dropdownMenu">
-				<li class="dropdownItem"><a href="index.html" class="dropdownLink">Home</a></li>
-				<li class="dropdownItem"><a href="about.html" class="dropdownLink">About</a></li>
-				<li class="dropdownItem"><a href="about.html" class="dropdownLink">Gallery</a></li>
-				<li class="dropdownItem"><a href="events.html" class="dropdownLink">Events</a></li>
-				<li class="dropdownItem"><a href="contact.html" class="dropdownLink">Contact</a></li>
-			</ul>
-		</div>
-	</nav>
-    <main class="main">
-        <div class="member">
-            <h1>About The Band</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis iusto nesciunt officiis ipsa neque, recusandae quod facilis veritatis libero inventore, nisi aspernatur dolorum rerum laudantium aliquam, consectetur atque totam quidem adipisci hic voluptate cumque impedit sint excepturi. Amet quis delectus placeat repellat quia magnam, adipisci cum id rem pariatur esse.</p>
-            <span>
-                <img src="https://www.gravatar.com/avatar/e48f467951ed8141e08ab5087666bddb?s=80&d=retro"></img>
-                <h2>Lead Singer</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia nemo nam recusandae illum, a dolorem!</p>
-            </span>
-            <span>
-                <img src="https://www.gravatar.com/avatar/e48f467951ed8141e08ab5087666bddb?s=80&d=retro"></img>
-                <h2>Lead Guitarist</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate repudiandae fuga, fugiat consequatur sint, sit!</p>
-            </span>
-            <span>
-                <img src="https://www.gravatar.com/avatar/e48f467951ed8141e08ab5087666bddb?s=80&d=retro"></img>
-                <h2>Drummer</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit obcaecati dolorem modi tenetur minus odio?</p>
-            </span>
+
+<body id="base">
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid navbar navbar--darken">
+            <div class="row visible-xs">
+                <ul class="nav navbar-nav dropdown-nav">
+                    <li class="dropdown col-xs-6">
+                        <a href="#" class="dropdown-toggle font-white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Menu<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><a href="about.html">About</a></li>
+                            <li><a href="media.html">Gallery</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <div class="navbar-header col-xs-6">
+                        <a href="/" class="navbar-brand font-white">The Dastardlys</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="row hidden-xs">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">The Dastardlys</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li><a href="media.html">Gallery</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
-    </main>
-    <footer class="navbar" id="BottomNav">
-        <ul>
-            <li><a href="http://www.twitter.com">Twitter</a></li>
-            <li><a href="http://www.facebook.com">Facebook</a></li>
-            <li><a href="http://www.instagram.com">Instagram</a></li>
-            <li><a href="http://www.soundcloud.com">SoundCloud</a></li>
-            <li><a href="http://www.spotify.com">Spotify</a></li>
-        </ul>
-    </footer>
+    </nav>
+    <!-- /.navbar -->
+    <!-- About Band -->
+    <div class="container-fluid band-container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>About The Band</h1>
+                <p>A four piece band playing classic Mod, Northern Soul, Motown, Ska, Revival, New Wave and originals.</p>
+            </div>
+        </div>
+    </div>
+    <!-- /.about-band -->
+    <!-- About Members -->
+    <div class="container-fluid members-container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 about-all" id="about-tony">
+                <img src="styles/Tony.JPG"></img>
+                <h2>Tony "Tonsk" Squance</h2>
+                <h3>Lead Singer</h3>
+                <h3>Rhythm Guitarist</h3>
+                <p>Love Plymouth Argyle. Hobbies - antique wallpaper collecting and watching Big Brother.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 about-all" id="about-brian">
+                <img src="styles/Brian.JPG"></img>
+                <h2>Brian "Briseyw" Westmore</h2>
+                <h3>Lead Guitarist</h3>
+                <p>Loves The Jam and Rickenbacker guitars. Favourite animal - shark.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 about-all" id="about-gareth">
+                <img src="styles/Gareth.JPG"></img>
+                <h2>Gareth Dudley</h2>
+                <h3>Drummer</h3>
+                <p>Favourite music - Mandolin music.  Hobbies - collecting used tissues.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 about-all" id="about-al">
+                <img src="styles/Alan.JPG"></img>
+                <h2>Al "Lowdown Al" Maunder</h2>
+                <h3>Bassist</h3>
+                <p>Favourite band - Jive Bunny. Hobbies - knitting and tiddlywinks.</p>
+            </div>
+        </div>
+    </div>
+    <!-- /.about-members -->
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </html>
