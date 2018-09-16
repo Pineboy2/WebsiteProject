@@ -1,120 +1,47 @@
-html {
-    background-color: #ddeeef;
-    font-family: "Helvetica",sans-serif;
+body {
+    font-family: "Roboto", sans-serif;
 }
 
-.navDefault {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #4a4a4f;
+#base {
+    background-color: #5d90b7;
+    padding-top: 53px;
 }
 
-button {
-    display: none;
-}
+/*Navbar*/
 
-.dropdownMenu {
-    list-style: none;
+.navbar {
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: transparent;
     margin: 0;
     padding: 0;
-    left: 0;
-    right: 0;
-    top: 50px;
-    text-align: center;
 }
 
-.dropdownItem {
-    display: inline-block;
+.navbar-brand {
+    padding-left: 50px;
+    color: white !important;
+    text-align: left;
 }
 
-.dropdownLink {
-    text-decoration: none;
-    display: inline-block;
-    color: #fff;
-    padding: 10px 5px;
-    transition: background-color .25s ease-in-out, color .25s ease-in-out;
+.navbar .dropdown {
+    padding-left: 20px;
 }
 
-.dropdownLink:hover {
-    color: #4a4a4f;
-    background-color: #eee;
+.font-white {
+    color: white !important;
 }
 
 .dropdown {
-    position: relative;
-    width: 100%;
-    font-size: 2em;
+    padding-right: 0;
 }
 
-.dropdown:hover button {
-    background-color: #018ec5;
-    transition: background-color .25s ease-in-out;
+.dropdown-nav {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
-.dropdown:hover .dropdownMenu {
-    transform: translateY(0);
+.dropdown-toggle {
+    padding-bottom: 15px;
 }
 
-.member span{
-    width: 200px;
-    height: 300px;
-    border-radius: 10%;
-    margin: 10px;
-    float: left;
-    background-color: #7a7a7f;
-    text-align: center;
-    color: #fff;
-}
-
-main {
-    padding-top: 55px;
-}
-
-@media (max-width: 991px) {
-    button {
-        display: block;
-        border: none;
-        background-color: #0997d3;
-        width: 150px;
-        height: 50px;
-        color: #fff;
-        text-transform: uppercase;
-        cursor: pointer;
-    }
-    
-    .dropdownLink {
-        color: #4a4a4f;
-        background-color: #f9f9f9;
-        display: block;
-    }
-    
-    .dropdownMenu {
-        position: absolute;
-        box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
-        transform: translateY(-100%);
-        transition: transform .5s ease-in-out;
-        z-index: -1;
-        width: 150px;
-        text-align: center;
-    }
-    
-    .dropdownItem {
-        display: block;
-    }
-    
-    .dropdownLink:hover {
-        color: #4a4a4f;
-    }
-    
-    .dropdown {
-        font-size: 1em;
-        width: 150px;
-    }
-}
-
-
-@media (max-width: 768px) {
-    
-}
+/* /Navbar */

@@ -4,43 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="main.css" type="text/css" />
+    <link rel="stylesheet" href="events.css" type="text/css" />
     <title>Band Website</title>
 </head>
-<body>
-	<nav class="navDefault">
-		<div class="dropdown">
-			<button>Dropdown</button>
-			<ul class="dropdownMenu">
-				<li class="dropdownItem"><a href="index.html" class="dropdownLink">Home</a></li>
-				<li class="dropdownItem"><a href="about.html" class="dropdownLink">About</a></li>
-				<li class="dropdownItem"><a href="about.html" class="dropdownLink">Gallery</a></li>
-				<li class="dropdownItem"><a href="events.html" class="dropdownLink">Events</a></li>
-				<li class="dropdownItem"><a href="contact.html" class="dropdownLink">Contact</a></li>
-			</ul>
-		</div>
-	</nav>
+<body id="base">
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid navbar navbar--darken">
+            <div class="row visible-xs">
+                <ul class="nav navbar-nav dropdown-nav">
+                    <li class="dropdown col-xs-6">
+                        <a href="#" class="dropdown-toggle font-white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Menu<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="media.html">Gallery</a></li>
+                            <li class="active"><a href="events.html">Events</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <div class="navbar-header col-xs-6">
+                        <a href="/" class="navbar-brand font-white">The Dastardlys</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="row hidden-xs">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">The Dastardlys</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="media.html">Gallery</a></li>
+                    <li class="active"><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- /.navbar -->
     <main class="main">
         <h1>Upcoming Events</h1>
-        <h2>Looe Music Festival, Looe</h2>
-        <p>22nd September 2018</p>
-        <h2>Private Party</h2>
-        <p>7th October 2018</p>
-        <h2>Royal Yacht Club, Devonport</h2>
-        <p>27th October 2018</p>
-        <h2>Exeter MOD Rally, Exeter</h2>
-        <p>3rd November 2018</p>
-        <h2>Air Ambulance Fundraiser, Plymouth Hooe</h2>
-        <p>24th November 2018</p>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="venue">The Kings</td>
+                    <td>Exeter</td>
+                    <td>1 Sept 2018</td>
+                </tr>
+                <tr>
+                    <td class="venue">The Old School</td>
+                    <td>Pelynt</td>
+                    <td>9 Sept 2018</td>
+                </tr>
+                <tr>
+                    <td class="venue">The Barley Sheaf</td>
+                    <td>Liskeard</td>
+                    <td>27 Sept 2018</td>
+                </tr>
+                <tr>
+                    <td class="venue">The Three Crowns</td>
+                    <td>Plymouth</td>
+                    <td>7 Dec 2018</td>
+                </tr>
+                <tr>
+                    <td class="venue">Keyham Barton Conservative Club</td>
+                    <td>Plymouth</td>
+                    <td>8 Dec 2018</td>
+                </tr>
+                <tr>
+                    <td class="venue">The Kings</td>
+                    <td>Exeter</td>
+                    <td>23 Mar 2019</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
-    <footer class="navbar" id="BottomNav">
-        <ul>
-            <li><a href="http://www.twitter.com">Twitter</a></li>
-            <li><a href="http://www.facebook.com">Facebook</a></li>
-            <li><a href="http://www.instagram.com">Instagram</a></li>
-            <li><a href="http://www.soundcloud.com">SoundCloud</a></li>
-            <li><a href="http://www.spotify.com">Spotify</a></li>
-        </ul>
-    </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </html>
