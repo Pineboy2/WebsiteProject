@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
-    <!--link rel="stylesheet" href="main.css" type="text/css" /-->
+    <link rel="stylesheet" href="main.css" type="text/css" />
     <link rel="stylesheet" href="index.css" type="text/css" />
     <title>Band Website</title>
 </head>
@@ -16,12 +16,27 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid navbar">
+        <div class="container-fluid navbar navbar--darken">
+            <div class="row visible-xs">
+                <ul class="nav navbar-nav dropdown-nav">
+                    <li class="dropdown col-xs-6">
+                        <a href="#" class="dropdown-toggle font-white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Menu<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="media.html">Gallery</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <div class="navbar-header col-xs-6">
+                        <a href="/" class="navbar-brand font-white">The Dastardlys</a>
+                    </div>
+                </ul>
+            </div>
             <div class="row hidden-xs">
                 <div class="navbar-header">
-                    <a href="/" class="navbar-brand">
-                    The Dastardlys
-                </a>
+                    <a href="index.html" class="navbar-brand">The Dastardlys</a>
                 </div>
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="index.html">Home</a></li>
@@ -31,36 +46,25 @@
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="row visible-xs">
-                <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="navbardropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Dropdown<span class="caret"></span></button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="media.html">Gallery</a></li>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
+        </div>
     </nav>
     <!-- /.navbar -->
     <!-- Landing -->
-    <div class="container-fluid landing-container">
+    <header class="container-fluid landing-container">
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
                 <section class="callout jumbotron text-center">
                     <h1>The Dastardlys</h1>
                     <hr class="block-divider">
-                    <p class="lead">Hailing from the Glorious South West of England playing Classic Mod, Northern Soul, Motown, Ska, Mod Revival, New Wave and Original Material. Covers from 60's onwards and original tracks with a definite nod towards the Mod Genre.</p>
+                    <p class="lead">Hailing from the Glorious South West of England playing Classic Mod, Northern Soul, Motown, Ska, Mod Revival, New Wave and Original Material.<span class="hidden-xs"> Covers from 60's onwards and original tracks with a definite nod towards the Mod Genre.</span></p>
                     <p><button class="btn btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
                 </section>
             </div>
         </div>
-    </div>
+    </header>
     <!-- /.landing -->
     <!-- Quotes -->
-    <div class="container-fluid quotes-container">
+    <article class="container-fluid quotes-container">
         <div class="row">
             <div class="col-xs-12">
                 <blockquote>
@@ -73,20 +77,53 @@
                 </blockquote>
             </div>
         </div>
-    </div>
+    </article>
     <!-- /.quotes -->
     <!-- Footer -->
-    <!-- /.footer -->
-    <!--<div class="footer">
-            <ul>
-                <li><a href="http://www.twitter.com">Twitter</a></li>
-                <li><a href="http://www.facebook.com">Facebook</a></li>
-                <li><a href="http://www.instagram.com">Instagram</a></li>
-                <li><a href="http://www.soundcloud.com">SoundCloud</a></li>
-                <li><a href="http://www.spotify.com">Spotify</a></li>
-            </ul>
+    <footer class="container-fluid social-container">
+        <div class="row">
+            <div class="col-xs 12">
+                <ul>
+                    <li><a href="http://www.twitter.com">Twitter</a></li>
+                    <li><a href="http://www.facebook.com">Facebook</a></li>
+                    <li><a href="http://www.instagram.com">Instagram</a></li>
+                    <li><a href="http://www.soundcloud.com">SoundCloud</a></li>
+                    <li><a href="http://www.spotify.com">Spotify</a></li>
+                </ul>
+            </div>
         </div>
-    </div>-->
+    </footer>
+    <!-- /.footer -->
+    <!-- Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Sign Up For Whiskey Drop!</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <p class="help-block">We'll never share your email address with anyone</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRepeat">Repeat Password</label>
+                            <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Your Password">
+                        </div>
+                        <button type="submit" class="btn btn-success">Sign Up!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal -->
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
