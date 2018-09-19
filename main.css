@@ -10,8 +10,7 @@ body {
 /*Navbar*/
 
 .navbar {
-    background-color: transparent;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: black;
     border-color: transparent;
     margin: 0;
     padding: 0;
@@ -42,6 +41,10 @@ body {
 
 .dropdown-toggle {
     padding-bottom: 15px;
+}
+
+.open .dropdown-toggle{
+    color: #333 !important;
 }
 
 /* /Navbar */
