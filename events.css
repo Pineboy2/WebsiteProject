@@ -1,0 +1,10 @@
+.table {
+    width:50%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#fbiframe {
+    width: 20vw;
+    height: 100vh;
+}
