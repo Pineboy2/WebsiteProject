@@ -1,13 +1,23 @@
 # Dastardlys Band Website
 
 My project is designing a website for a local band called The Dastardlys.
-The website will allow users to listen to their music, view past performances, see the event schedule, and contact the band.
-
-One or two paragraphs providing an overview of your project.
-
-Essentially, this part is your sales pitch.
+The website will allow the band to showcase their music and allow users to view past performances, see the upcoming events schedule, and contact the band.
  
 ## UX
+ 
+This website is for managers of live band venues, organisers of events and fans.
+
+Managers of live band venues, organisers of events can use the website to source new acts, gauge the quality, professionalism and genre.
+
+Fans cans use this website to find out if they enjoy the band, where and when the band will be playing
+
+As a pub owner I want to see if this band would be suitable for my pub by viewing videos in the gallery to see what music they play and how well they play.
+
+As an event host I want to hire the band so I will use the contact me page to get in touch.
+
+As a potential fan I want to watch videos to see if I would enjoy the music so I will view the gallery.
+
+As a fan of the band I want to find out where they are playing next so I will go to the events page.
  
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
@@ -17,6 +27,14 @@ In particular, as part of this section we recommend that you provide a list of U
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
 ## Features
+
+Eye catching front page with cohesive colour scheme.
+
+Information about the band, it's music, genre and it's members.
+
+Pictures and videos of the band.
+
+Table of events.
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
  
@@ -77,7 +95,7 @@ In addition, if it is not obvious, you should also describe how to run your code
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
 ### Media
-- The photos used in this site were obtained from ...
+- The photos used in this site were obtained from Brian Westmore of The Dastardlys
 
 ### Acknowledgements
 
