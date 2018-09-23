@@ -12,16 +12,6 @@
     position: relative;
 }
 
-.quotes-container {
-    /*background-color: #9cbfac;*/
-    background-color: #5697dd;
-}
-
-.social-container {
-    /*background-color: #89c2d3;*/
-    background-color: #222;
-}
-
 .opaque-overlay {
     position: absolute;
     top: 0;
