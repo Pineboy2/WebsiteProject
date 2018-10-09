@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,41 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="main.css" type="text/css" />
-    <link rel="stylesheet" href="main.css" type="text/css" />
+    <style type="text/css">
+        .formRequired {
+            color: #e00;
+        }
+        #contact-info,
+        #contact-form {
+            background-color: white;
+            border-radius: 20px;
+            padding: 10px;
+            border:5px solid #5d90b7;
+            height: 580px;
+        }
+        @media (max-width: 767px) {
+            #contact-info {
+                height: auto;
+            }
+        }
+    </style>
     <title>Band Website</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
+
 <body id="base">
     <!-- Navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid navbar navbar--darken">
             <div class="row visible-xs">
                 <ul class="nav navbar-nav dropdown-nav">
-                    <li class="dropdown col-xs-6">
+                    <li class="dropdown col-xs-5">
                         <a href="#" class="dropdown-toggle font-white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Menu<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a class="font-white" href="index.html">Home</a></li>
@@ -27,7 +53,7 @@
                             <li class="active"><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </li>
-                    <div class="navbar-header col-xs-6">
+                    <div class="navbar-header col-xs-7">
                         <a href="/" class="navbar-brand font-white">The Dastardlys</a>
                     </div>
                 </ul>
@@ -48,6 +74,41 @@
     </nav>
     <!-- /.navbar -->
     <main class="main">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="container-fluid contact-container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6" id="contact-info">
+                    <p>Phone: 0118999881999119725 3</p>
+                    <p>Facebook: <a href="https://www.facebook.com/TheDastardlys/">The Dastardlys</a></p>
+                    <img class="img-rounded center-block hidden-xs" width="100%" style="max-width: 650px;" src="styles/gallery/IMG_0398.JPG"></img>
+                </div>
+                <div class="col-xs-12 col-sm-6" id="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="contactEmail">Email address<span class="formRequired small">*</span></label>
+                            <input type="email" class="form-control" id="contactEmail" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactName">Name</label>
+                            <input type="text" class="form-control" id="contactName" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject<span class="formRequired small">*</span></label>
+                            <input type="text" class="form-control" id="contactSubject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message<span class="formRequired small">*</span></label>
+                            <textarea class="form-control" rows="8" id="contactMessage" required></textarea>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox"> I consent to having this website store my submitted information so they can respond to my inquiry. See our privacy policy to learn more how we use data.</label>
+                        </div>
+                        <p><small class="formRequired">*Required</small></p>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
