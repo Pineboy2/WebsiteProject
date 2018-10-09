@@ -13,13 +13,16 @@
         .formRequired {
             color: #e00;
         }
+        #contactDiv {
+            height: 630px;
+        }
         #contact-info,
         #contact-form {
             background-color: white;
             border-radius: 20px;
             padding: 10px;
             border:5px solid #5d90b7;
-            height: 580px;
+            height: 100%;
         }
         @media (max-width: 767px) {
             #contact-info {
@@ -76,12 +79,12 @@
     <main class="main">
         <h1 class="text-center">Contact Us</h1>
         <div class="container-fluid contact-container">
-            <div class="row">
+            <div class="row" id="contactDiv">
                 <div class="col-xs-12 col-sm-6" id="contact-info">
                     <p>Phone: 0118999881999119725 3</p>
                     <p>Facebook: <a href="https://www.facebook.com/TheDastardlys/">The Dastardlys</a></p>
                     <p>Lemonrock: <a href="https://www.lemonrock.com/dastardlys">dastardlys</a></p>
-                    <img class="img-rounded center-block hidden-xs" width="100%" style="max-width: 610px;" src="styles/gallery/IMG_0398.JPG"></img>
+                    <img class="img-rounded center-block hidden-xs" width="100%" style="max-width: 680px;" src="styles/gallery/IMG_0398.JPG"></img>
                 </div>
                 <div class="col-xs-12 col-sm-6" id="contact-form">
                     <form>
@@ -103,8 +106,6 @@
                         </div>
                         <div class="checkbox">
                             <label><input type="checkbox" id="contactVerify" required> I consent to having this website store my submitted information so they can respond to my inquiry. See our privacy policy to learn more how we use data.<span class="formRequired small">*</span></label>
-                            <!--label><input type="checkbox" class="form-control" id="contactVerify" required>I consent to having this website store my submitted information so they can respond to my inquiry. See our privacy policy to learn more how we use data.<span class="formRequired small">*</span></label>
-                            <label><input type="checkbox"> I consent to having this website store my submitted information so they can respond to my inquiry. See our privacy policy to learn more how we use data.</label-->
                         </div>
                         <p><small class="formRequired">*Required</small></p>
                         <button type="submit" class="btn btn-default">Submit</button>
