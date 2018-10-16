@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css" type="text/css" />
-    <style type="text/css">
+    <style>
         .formRequired {
             color: #e00;
         }
@@ -32,6 +32,7 @@
                 height: auto;
             }
         }
+
         .submitButton {
             display: inline;
         }
@@ -46,6 +47,8 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="styles/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
 <body id="base">
@@ -54,7 +57,7 @@
         <div class="container-fluid navbar navbar--darken">
             <div class="row visible-xs">
                 <ul class="nav navbar-nav dropdown-nav">
-                    <li class="dropdown col-xs-5">
+                    <li class="dropdown col-xs-4">
                         <a href="#" class="dropdown-toggle font-white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Menu<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a class="font-white" href="index.html">Home</a></li>
@@ -64,9 +67,9 @@
                             <li class="active"><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </li>
-                    <div class="navbar-header col-xs-7">
+                    <li class="navbar-header col-xs-8">
                         <a href="/" class="navbar-brand font-white">The Dastardlys</a>
-                    </div>
+                    </li>
                 </ul>
             </div>
             <div class="row hidden-xs">
@@ -92,7 +95,7 @@
                     <p>Phone: 07519 699721</p>
                     <p>Facebook: <a href="https://www.facebook.com/TheDastardlys/" target="_blank">The Dastardlys</a></p>
                     <p>Lemonrock: <a href="https://www.lemonrock.com/dastardlys" target="_blank">dastardlys</a></p>
-                    <img class="img-rounded center-block hidden-xs" width="100%" style="max-width: 680px;" src="styles/gallery/IMG_0398.JPG"></img>
+                    <img class="img-rounded center-block hidden-xs" style="width: 100%; max-width: 680px;" src="styles/gallery/IMG_0398.JPG" alt="The band"/>
                 </div>
                 <div class="col-xs-12 col-sm-6" id="contact-form">
                     <form>
@@ -124,7 +127,5 @@
         </div>
     </main>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </html>

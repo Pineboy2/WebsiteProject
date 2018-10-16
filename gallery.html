@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css" type="text/css" />
-    <style type="text/css">
+    <style>
         img {
             padding: 0!important;
         }
@@ -17,6 +17,9 @@
         iframe.video {
             padding: 0;
             overflow: hidden;
+        }
+        iframe {
+            width: 100%;
         }
     </style>
     <title>Gallery | The Dastardlys</title>
@@ -29,6 +32,8 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="styles/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
 <body id="base">
@@ -37,19 +42,19 @@
         <div class="container-fluid navbar navbar--darken">
             <div class="row visible-xs">
                 <ul class="nav navbar-nav dropdown-nav">
-                    <li class="dropdown col-xs-5">
+                    <li class="dropdown col-xs-4">
                         <a href="#" class="dropdown-toggle font-white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Menu<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a class="font-white" href="index.html">Home</a></li>
                             <li><a class="font-white" href="about.html">About</a></li>
-                            <li class="active"><a href="gallery.html">Gallery</a></li>
+                            <li class="active"><a class="font-white" href="gallery.html">Gallery</a></li>
                             <li><a class="font-white" href="events.html">Events</a></li>
                             <li><a class="font-white" href="contact.html">Contact Us</a></li>
                         </ul>
                     </li>
-                    <div class="navbar-header col-xs-7">
+                    <li class="navbar-header col-xs-8">
                         <a href="/" class="navbar-brand font-white">The Dastardlys</a>
-                    </div>
+                    </li>
                 </ul>
             </div>
             <div class="row hidden-xs">
@@ -59,7 +64,7 @@
                 <ul class="nav navbar-nav">
                     <li><a class="font-white" href="index.html">Home</a></li>
                     <li><a class="font-white" href="about.html">About</a></li>
-                    <li class="active"><a href="gallery.html">Gallery</a></li>
+                    <li class="active"><a class="font-white" href="gallery.html">Gallery</a></li>
                     <li><a class="font-white" href="events.html">Events</a></li>
                     <li><a class="font-white" href="contact.html">Contact Us</a></li>
                 </ul>
@@ -69,43 +74,41 @@
     <!-- /.navbar -->
     <main class="container-fluid">
         <div class="row">
-            <iframe class="col-xs-12 col-sm-4 video" width="100%" height="315" src="https://www.youtube-nocookie.com/embed/nC6Pb5XS8Ks" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <iframe class="col-xs-12 col-sm-4 video" width="100%" height="315" src="https://www.youtube-nocookie.com/embed/T5bkDgFyvhg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <iframe class="col-xs-12 col-sm-4 video" width="100%" height="315" src="https://www.youtube-nocookie.com/embed/WG10xguaLXk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe class="col-xs-12 col-sm-4 video" height="315" src="https://www.youtube-nocookie.com/embed/nC6Pb5XS8Ks" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe class="col-xs-12 col-sm-4 video" height="315" src="https://www.youtube-nocookie.com/embed/T5bkDgFyvhg" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe class="col-xs-12 col-sm-4 video" height="315" src="https://www.youtube-nocookie.com/embed/WG10xguaLXk" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         <div class="row">
-            <img class="landscape col-xs-12 col-sm-6" src="styles/gallery/DSC05491.JPG">
-            <img class="landscape col-xs-12 col-sm-6" src="styles/gallery/DSC05481.JPG">
+            <img class="landscape col-xs-12 col-sm-6" src="styles/gallery/DSC05491.JPG" alt="The Band">
+            <img class="landscape col-xs-12 col-sm-6" src="styles/gallery/DSC05481.JPG" alt="Tony">
         </div>
         <div class="row">
-            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/DSC05487.JPG">
-            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/DSC05501.JPG">
-            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/IMG_0404.JPG">
-            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/IMG_0402.JPG">
+            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/DSC05487.JPG" alt="Al">
+            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/DSC05501.JPG" alt="Brian">
+            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/IMG_0404.JPG" alt="Tony">
+            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/IMG_0402.JPG" alt="Brian">
         </div>
         <div class="row">
-            <img class="landscape col-xs-12 col-sm-6" src="styles/gallery/WP_20150407_02_49_38_Pro(1).jpg">
-            <img class="landscape col-xs-12 col-sm-6" src="styles/gallery/IMG_0399.JPG">
+            <img class="landscape col-xs-12 col-sm-6" src="styles/gallery/WP_20150407_02_49_38_Pro(1).jpg" alt="The Band">
+            <img class="landscape col-xs-12 col-sm-6" src="styles/gallery/IMG_0399.JPG" alt="Brian, Tony and Al">
         </div>
         <div class="row">
-            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/IMG_0391.JPG">
-            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/WP_20150407_05_04_26_Pro(1).jpg">
-            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/IMG_0395.JPG">
-            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/IMG_0396.JPG">
+            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/IMG_0391.JPG" alt="Brian">
+            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/WP_20150407_05_04_26_Pro(1).jpg" alt="Gareth">
+            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/IMG_0395.JPG" alt="Tony">
+            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/IMG_0396.JPG" alt="Brian">
         </div>
         <div class="row">
-            <img class="landscape col-xs-12 col-sm-6" src="styles/gallery/IMG_0383.JPG">
-            <img class="landscape col-xs-12 col-sm-6" src="styles/gallery/IMG_0339.JPG">
+            <img class="landscape col-xs-12 col-sm-6" src="styles/gallery/IMG_0383.JPG" alt="Brian, Gareth and Tony">
+            <img class="landscape col-xs-12 col-sm-6" src="styles/gallery/IMG_0339.JPG" alt="The Band">
         </div>
         <div class="row">
-            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/IMG_0344.JPG">
-            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/IMG_0343.JPG">
-            <img class="portrait col-xs-6 col-sm-3 col-xs-6 col-sm-3" src="styles/gallery/IMG_0345.JPG">
-            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/IMG_0321.JPG">
+            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/IMG_0344.JPG" alt="Gareth">
+            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/IMG_0343.JPG" alt="Tony">
+            <img class="portrait col-xs-6 col-sm-3 col-xs-6 col-sm-3" src="styles/gallery/IMG_0345.JPG" alt="Al">
+            <img class="portrait col-xs-6 col-sm-3" src="styles/gallery/IMG_0321.JPG" alt="Brian, Tony and Al">
         </div>
     </main>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </html>
