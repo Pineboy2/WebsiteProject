@@ -19,6 +19,8 @@ Fans cans use this website to find out if they enjoy the band, where and when th
 
 - As a fan of the band I want to find out where they are playing next so I will go to the events page.
 
+An early [wireframe](https://imgur.com/DSp75zn) can be viewed
+
 ## Features
 
 ### Existing Features
@@ -62,7 +64,7 @@ Navbar links tested on every page to confirm links lead to correct pages.
 
 Developed on Cloud9, uploaded files to Github and hosted on [Github Pages](https://pineboy2.github.io/WebsiteProject).
 
-To run files locally run:
+To run files locally use:
 ```
 git clone https://github.com/Pineboy2/WebsiteProject.git
 ```
@@ -74,5 +76,8 @@ The photos and text used in this site were obtained from Brian Westmore of The D
 Code snippets taken from Bootstrap
 
 Fonts were provided by Google Fonts
+- [Roboto](https://fonts.google.com/specimen/Roboto)
+- [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
 
-Favicon is from wikipedia
+Favicon is from Wikipedia: 
+- [RAF roundel.svg](https://upload.wikimedia.org/wikipedia/commons/b/b3/RAF_roundel.svg)
