@@ -32,6 +32,9 @@
                 height: auto;
             }
         }
+        .submitButton {
+            display: inline;
+        }
     </style>
     <title>Contact Us | The Dastardlys</title>
     <link rel="apple-touch-icon" sizes="180x180" href="styles/favicon/apple-touch-icon.png">
@@ -110,11 +113,11 @@
                             <textarea class="form-control" rows="8" id="contactMessage" required></textarea>
                         </div>
                         <div class="checkbox">
-                            <label><input type="checkbox" id="contactVerify" required> I consent to having this website store my submitted information so they can respond to my inquiry. See our privacy policy to learn more how we use data.<span class="formRequired small">*</span></label>
+                            <label><input type="checkbox" id="contactVerify" required> I consent to having this website store my submitted information so they can send me newsletters. See our privacy policy to learn more how we use data.<span class="formRequired small">*</span></label>
                         </div>
                         <p><small class="formRequired">*Required</small></p>
-                        <button id="contactSubmit" type="submit" class="btn btn-default col-xs-1">Submit</button>
-                        <span class="help-block col-xs-11"><small>We'll never share your information with anyone</small></span>
+                        <button id="contactSubmit" type="submit" class="btn btn-default submitButton">Submit</button>
+                        <span class="help-block submitButton"><small><small>We'll never share your information with anyone</small></small></span>
                     </form>
                 </div>
             </div>
