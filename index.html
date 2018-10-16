@@ -10,6 +10,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css" type="text/css" />
     <link rel="stylesheet" href="styles/index.css" type="text/css" />
+    <style type="text/css">
+        .formRequired {
+            color: #e00;
+        }
+    </style>
     <title>The Dastardlys</title>
     <link rel="apple-touch-icon" sizes="180x180" href="styles/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="styles/favicon/favicon-32x32.png">
@@ -83,17 +88,21 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                            <label for="email">Email address</label>
+                            <label for="email">Email address<span class="formRequired small">*</span></label>
                             <input type="email" class="form-control" id="email" placeholder="Email" required>
                             <p class="help-block">We'll never share your email address with anyone</p>
                         </div>
                         <div class="form-group">
-                            <label for="password">Password</label>
+                            <label for="password">Password<span class="formRequired small">*</span></label>
                             <input type="password" class="form-control" id="password" placeholder="Password" required>
                         </div>
                         <div class="form-group">
-                            <label for="passwordRepeat">Repeat Password</label>
+                            <label for="passwordRepeat">Repeat Password<span class="formRequired small">*</span></label>
                             <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Your Password" required>
+                        <div class="checkbox">
+                            <label><input type="checkbox" id="contactVerify" required> I consent to having this website store my submitted information so they can respond to my inquiry. See our privacy policy to learn more how we use data.<span class="formRequired small">*</span></label>
+                        </div>
+                        <p><small class="formRequired">*Required</small></p>
                         </div>
                         <button type="submit" class="btn btn-success">Sign Up!</button>
                     </form>
