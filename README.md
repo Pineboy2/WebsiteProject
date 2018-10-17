@@ -56,6 +56,9 @@ Manual User Testing was conducted and found that scrolling didn't work on iframe
 
 - Iframe scrolling on gallery fixed in commit cc85bc99a5ab5b1c547c95bb0a6bb9d67c303d75.
 
+- Scroll hiding navbar not completed as JavaScript is required.
+
+
 Subscribe and contact forms will not submit without required boxes being filled and boxes requiring emails test for proper email format.
 
 Navbar links tested on every page to confirm links lead to correct pages.
